@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dl-to-table example</title>
+    <link rel="stylesheet" href="dl-to-table.min.css">
+
+    <style>
+        * {
+            box-style: border-box;
+        }
+
+        .dl-to-table ul {
+            list-style: none;
+            margin:16px 0;
+            border-top:1px solid grey;
+            padding:0;
+        }
+
+        .dl-to-table li {
+            border-bottom:1px solid grey;
+            margin-left:0;
+        }
+
+        .dl-to-table dt, .dl-to-table dd {
+            display:inline-block;
+            margin:0;
+            padding:4px 0;  
+        }
+
+        .dl-to-table dt {
+            width:40%;
+            font-weight:bold;
+        }
+
+        .dl-to-table dd {
+            width:60%;
+        }
+
+        .table--bordered {
+            cell-spacing:0;
+            width:100%;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        .table--bordered th, .table--bordered td {
+            padding: 3px;
+            margin: 0;
+            border: 1px solid grey;
+            cell-spacing:0;
+        }
+    </style>
+</head>
+<body>
+  <div class="dl-to-table" data-table-class='table--bordered'>
+      <ul>
+          <li>
+              <dl>
+                  <dt>Name</dt><dd>Mace</dd>
+                  <dt>Region</dt><dd>AAAAAAAAAAA</dd>
+                  <dt>Age</dt><dd>44</dd>
+                  <dt>Score</dt><dd>70</dd>
+                  <dt>Time</dt><dd>2:25</dd>
+                  <dt>Average</dt><dd>69.54</dd>
+              </dl>
+          </li><li>
+              <dl>
+                  <dt>Name</dt><dd>Sace</dd>
+                  <dt>Region</dt><dd>BBBBBBBBBBB</dd>
+                  <dt>Age</dt><dd>45</dd>
+                  <dt>Score</dt><dd>78</dd>
+                  <dt>Time</dt><dd>2:25</dd>
+                  <dt>Average</dt><dd>78.49</dd>
+              </dl>
+          </li><li>
+              <dl>
+                  <dt>Name</dt><dd>Jace</dd>
+                  <dt>Region</dt><dd>CCCCCCCCCCC</dd>
+                  <dt>Age</dt><dd>47</dd>
+                  <dt>Score</dt><dd>70</dd>
+                  <dt>Time</dt><dd>2:40</dd>
+                  <dt>Average</dt><dd>71.23</dd>
+              </dl>
+          </li>
+      </ul>
+  </div>
+  <script src='dl-to-table.min.js'></script>
+</body>
+</html>
