@@ -10,7 +10,7 @@
 *
 * To use:
 * 1. Include this script and the css file with the same name
-* 2. Use the markup format as shown in the example with the inline-editing classes and the data-attib db hooks
+* 2. Use the markup format as shown in the example.html
 * 3. Style the ul, 'li's, 'dl's and tables, as needed.
 *
 * usage eg:
